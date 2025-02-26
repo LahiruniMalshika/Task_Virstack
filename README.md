@@ -2,7 +2,7 @@
 
 Modal Content
 
-Tech Stack
+# Tech Stack 
   HTML
   CSS
   Vanila JS
