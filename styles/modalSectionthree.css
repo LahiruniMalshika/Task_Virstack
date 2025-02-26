@@ -1,0 +1,38 @@
+.container {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+.container #screen_3Title {
+  font-size: 14px;
+  font-weight: 550;
+}
+.container #Check {
+  margin-top: 10px;
+}
+.container #JobNo {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+.container #handler {
+  color: #333;
+  font-size: 14px;
+}
+.container .radio-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.container .radio-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.container .radio-container label span {
+  color: #333;
+  margin-left: 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=modalSectionthree.css.map */

@@ -1,0 +1,129 @@
+.container {
+  width: 100%;
+  margin: 5px;
+  text-align: left;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-left: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container #screen_2Title {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.container select {
+  padding: 12px 15px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+.container select:focus {
+  border-color: #2e5c8d;
+  outline: none;
+}
+.container #templateDropdownMenu,
+.container #dropdownView {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 100px;
+  font-size: 12px;
+  color: #333;
+}
+.container .hidden-content {
+  display: none !important;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container .visible-div {
+  display: block !important;
+}
+.container .view-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  gap: 10px;
+  height: 100%;
+}
+.container .view-container .left-part,
+.container .view-container .right-part {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.container .view-container .left-part .checkbox-section,
+.container .view-container .right-part .checkbox-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  padding: 10px;
+}
+.container .view-container .left-part .checkbox-section label,
+.container .view-container .right-part .checkbox-section label {
+  font-size: 14px;
+}
+.container .view-container .left-part .checkbox-section label .checkbox,
+.container .view-container .right-part .checkbox-section label .checkbox {
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.container #lastEstimate {
+  margin-bottom: 12px;
+}
+.container #leftTitle,
+.container #rightTitle {
+  color: #333 !important;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.container #phasesTable {
+  width: 95%;
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+.container #phasesTable th,
+.container #phasesTable td {
+  padding: 10px;
+}
+.container #phasesTable th {
+  color: #333;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.container #phasesTable td {
+  color: #000000;
+  font-size: 14px;
+}
+.container #phasesTable .checkbox {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.container #phasesTable tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+.container #phasesTable tr:hover {
+  background-color: #eaeaea;
+}/*# sourceMappingURL=modalSectionTwo.css.map */
