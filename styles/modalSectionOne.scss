@@ -1,0 +1,182 @@
+// colours used in the project
+$light: #ffffff;
+$blue: #2e5c8d;
+$black: #000000;
+$grey: #7c817ff5;
+$border_color: #ccc;
+$modal_background: #000000;
+$text: #333;
+$table_row_hover_color: #eaeaea;
+$font14: 14px;
+$font12: 12px;
+$font18: 18px;
+$font16: 16px;
+
+.screen_1Title {
+  margin-top: 10px;
+  padding-left: 5px;
+
+  #sectionOnetopic {
+    font-size: $font14;
+    font-weight: 550;
+  }
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  max-width: 500px;
+  margin-top: 10px;
+  align-self: center;
+  margin-left: 10px;
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid $border_color;
+    border-radius: 20px;
+    font-size: $font14;
+    outline: none;
+    transition: all 0.3s ease;
+    height: 35px;
+  }
+
+  .clear-icon {
+    position: absolute;
+    right: 35px;
+    font-size: $font18;
+    color: $grey;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: $font18;
+    color: $grey;
+    pointer-events: none;
+  }
+}
+
+.content-section {
+  width: 95%;
+  margin: 20px auto;
+  border: 1px solid $border_color;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .table-header {
+    display: flex;
+    background-color: $light;
+    padding: 10px;
+    font-size: $font12;
+    border-bottom: 1px solid $border_color;
+
+    span {
+      flex: 1;
+      text-align: left;
+      color: $grey;
+    }
+  }
+
+  .table-body {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .table-row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid $table_row_hover_color;
+    align-items: left;
+    height: 15px;
+
+    &:hover {
+      background-color: $table_row_hover_color;
+    }
+
+    span {
+      flex: 1;
+      text-align: left;
+      font-size: $font12;
+    }
+
+    input[type="checkbox"] {
+      margin: 0 auto;
+      transform: scale(0.8);
+      appearance: none;
+      border-radius: 4px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid $border_color;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+
+      &:checked {
+        background-color: $blue;
+        border-color: $blue;
+      }
+
+      &:checked::before {
+        content: "✔";
+        color: $light;
+        font-size: $font16;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .table-footer {
+    text-align: right;
+    padding: 10px;
+    background-color: $light;
+  }
+
+  .next-icon {
+    cursor: pointer;
+    color: $grey;
+    font-size: 1.2em;
+
+    &:hover {
+      color: $text;
+    }
+  }
+
+  #pageNo {
+    font-size: $font14;
+    color: $grey;
+  }
+
+  #firstBtn,
+  #prevBtn,
+  #nextBtn,
+  #lastBtn {
+    font-size: $font12;
+    color: $grey;
+    cursor: pointer;
+
+    &.disabled {
+      color: $grey;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

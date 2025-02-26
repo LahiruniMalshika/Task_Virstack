@@ -1,0 +1,112 @@
+// colours used in the project
+$light: #ffffff;
+$blue: #2e5c8d;
+$black: #000000;
+$grey: #7c817ff5;
+$border_color: #ccc;
+$modal_background: #000000;
+$text: #333;
+$font14: 14px;
+$font12: 12px;
+$font18: 18px;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+}
+
+.popup-btn {
+  padding: 10px 20px;
+  font-size: $font18;
+  background-color: $blue;
+  color: $light;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    background-color: $light;
+    border-radius: 10px;
+    width: 500px;
+
+    .modal-header {
+      margin-top: 5px;
+      height: 22px;
+      border-bottom: $border_color;
+
+      #newjob {
+        margin-left: 5px;
+        font-size: $font12;
+      }
+    }
+
+    .modal-body {
+      margin: 0 0;
+    }
+
+    .modal-footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+      border-top: solid 1px $border_color;
+      padding-top: 10px;
+
+      .page-indicator-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+        margin-left: 75px;
+
+        .page-indicator {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $grey;
+          transition: background-color 0.3s;
+
+          &.page-indicator-active {
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: $blue;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}

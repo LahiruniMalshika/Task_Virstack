@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virstack Assignment</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+      <button class="popup-btn" id="modalTrigger">Open Modal</button>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <Text id="newjob">New Job</Text>
+        </div>
+        <div class="modal-body">
+          <div id="dynamicSection">
+            <!-- Content -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="page-indicator-container">
+            <span
+              class="page-indicator page-indicator-active"
+              id="stepOne"
+            ></span>
+            <span class="page-indicator" id="stepTwo"></span>
+            <span class="page-indicator" id="stepThree"></span>
+          </div>
+          <button id="nextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
