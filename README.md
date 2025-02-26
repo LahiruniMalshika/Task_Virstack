@@ -4,5 +4,6 @@ Modal Content
 
 # Tech Stack 
   HTML
-  CSS
+  SCSS
   Vanila JS
+
